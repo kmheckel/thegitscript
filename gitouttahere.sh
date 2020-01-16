@@ -8,5 +8,8 @@ curl -u kmheckel \
        -d '{"name":"'$1'"}' https://api.github.com/user/repos
 cd $1
 
+git init
+git add .
+git commit -m "Y33t"
 git remote add $1_public git@github.com:kmheckel/$1.git
 git push -u $1_public master
